@@ -1,0 +1,14 @@
+common: &common
+  client_id: 'teste-backend'
+  brokers:
+    
+    - localhost:9092
+
+development:
+  <<: *common
+test:
+  <<: *common
+staging:
+  <<: *common
+production:
+  <<: *common
